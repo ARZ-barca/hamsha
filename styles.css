@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -73,7 +73,7 @@ body {
   min-height: 100vh;
   position: relative;
   /* for footer */
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 /* 
@@ -99,10 +99,10 @@ body {
 .header {
   display: flex;
 }
-
+/*
 #header {
   background-image:linear-gradient(to right, #b6b5b0, #8bc7ba);
-}
+}*/
 
 /* 
   ###############################
@@ -171,7 +171,7 @@ body {
 */
 
 #footer {
-  height: 10vh;
+  height: 5vh;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -192,7 +192,7 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 #header .whatsapp {
@@ -208,11 +208,6 @@ body {
 .whatsapp-number {
   line-height: 50px;
   height: 50px;
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(76, 92, 92);
-}
-
-#footer .whatsapp {
-  bottom: 5px;
-  right: 5px;
 }
