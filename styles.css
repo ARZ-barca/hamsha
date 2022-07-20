@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+
+  --color-50:  #F8FAFC;
+  --color-100: #F1F5F9;
+  --color-200: #E2E8F0;
+  --color-300: #CBD5E1;
+  --color-400: #94A3B8;
+  --color-500: #64748B;
+  --color-600: #475569;
+  --color-700: #334155;
+  --color-800: #1E293B;
+  --color-900: #0F172A;
+
+  --image-gap: 30px;
+}
+
+body {
+  background-color: var(--color-100);
+}
+
+/*
+    ###############
+    header
+*/
+
+.header {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+
+  font-size: 30px;
+  font-weight: 300;
+  
+  color: var(--color-400);
+  background-color: var(--color-900);
+}
+
+/*
+    ##############
+    nav
+*/
+
+.nav li {
+  list-style: none;
+
+  text-align: center;
+
+  background-color: var(--color-200);
+  color: var(--color-500);
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid var(--color-900);
+}
+
+.nav {
+  margin-bottom: var(--image-gap);
+}
+
+/*
+    ##############
+    images
+*/
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--image-gap);
+  align-items: center;
+  padding-bottom: var(--image-gap);
+}
+
+.images img {
+  width: min(400px, 100vw);
+  height: auto;
+  
+  border-radius: 10px;
+}
+
+/*
+    ##############
+    desktop layout
+*/
+
+@media only screen and (min-width: 860px) {
+  .images {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .nav li {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px var(--color-400);
+    border: none;
+  }
+
+
+}
