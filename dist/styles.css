@@ -19,6 +19,8 @@
   --color-900: #0F172A;
 
   --image-gap: 30px;
+
+  --nav-button-padding: 10px;
 }
 
 body {
@@ -28,7 +30,6 @@ body {
  
   min-height: 100vh;
   font-family: 'Indie Flower', cursive;
-  
 }
 
 /*
@@ -38,8 +39,11 @@ body {
 
 .header {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 100px;
+
 
   font-size: 30px;
   font-weight: 300;
@@ -65,12 +69,13 @@ body {
   background-color: var(--color-300);
   color: var(--color-600);
 
-  padding: 20px 0;
-  width: 130px;
+  padding: var(--nav-button-padding) 0;
 
   border-bottom: 1px solid var(--color-900);
 
   cursor: pointer;
+
+  font-family: 'Gulzar', serif;
 }
 
 .nav {
@@ -91,7 +96,7 @@ body {
 }
 
 .shop-button.no-padding a {
-  padding: 20px 0;
+  padding: var(--nav-button-padding) 0;
   display: block;
   text-align: center;
 }
@@ -155,8 +160,7 @@ body {
   margin-right: 20px;
 }
 
-.insta-label,
-.whatsapp-label {
+.insta-label {
   line-height: 50px;
   height: 50px;
 }
@@ -201,8 +205,9 @@ body {
 
   .nav li {
     border-radius: 8px;
-    padding: 20px;
+    padding: var(--nav-button-padding);
     box-shadow: 0 0 5px 2px var(--color-400);
     border: none;
+    width: 130px;
   }
 }
